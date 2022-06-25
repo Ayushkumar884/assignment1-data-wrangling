@@ -1,0 +1,40 @@
+pip install numpy
+import numpy as np
+
+1.
+qw=np.zeros(10)
+qw[4]=1
+print("null vector whose 5th elemrnt is 1=",qw)
+
+2.
+vector1=np.arange(10,50)
+print(vector1)
+
+3.
+vector2=np.arange(0,9).reshape(3,3)
+print(vector2)
+
+4.
+k=[1,2,0,0,4,0]
+for i in range(0,len(k)):
+    if k[i]!=0:
+        print(f"Index of{k[i]}element- {i}")
+
+or
+non_zero = np.nonzero([1,2,0,0,4,0])
+print(non_zero)
+
+5.
+yop=ny.random.randint(0,100,size=(10,10))
+print(yop)
+re=yop.max()
+print("Maximum in the whole array=",re)
+pe=yop.min()
+print("Minimum in the whole array=",pe) 
+
+6.
+vector3=np.random.randint(0,100,(30))
+mean_of=np.mean(vector3)
+print("array of 30 elemnts=",vector3)
+print("mean of array=",mean_of)           
+         
